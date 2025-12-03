@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeropuerto Internacional</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4d7d3e5a5b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-plane-departure"></i> AEROPUERTO INTERNACIONAL DANGER
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#vuelos">Vuelos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <h1 id="titulo-dinamico" data-texto="Bienvenido al Aeropuerto Internacional Danger"></h1>
+        <h2>Conectando destinos, conectando personas</h2>
+        <p>Tu viaje comienza aquí</p>
+        <ul class="datos-rapidos">
+            <li><i class="fas fa-plane"></i> <span class="contador" data-num="120">0</span> vuelos diarios</li>
+            <li><i class="fas fa-globe"></i> <span class="contador" data-num="40">0</span> destinos internacionales</li>
+            <li><i class="fas fa-users"></i> <span class="contador" data-num="2000000">0</span> pasajeros al año</li>
+        </ul>
+        <div class="hero-btns">
+            <a href="#vuelos" class="btn">Ver Vuelos</a>
+            <a href="#servicios" class="btn secundario">Nuestros Servicios</a>
+        </div>
+    </section>
+
+    <section id="vuelos" class="seccion">
+      <h2><i class="fas fa-plane"></i> Vuelos Disponibles</h2>
+      <input type="text" id="buscador-vuelos" placeholder="Buscar destino...">
+      <table id="tabla-vuelos">
+        <thead>
+          <tr>
+            <th>Destino</th>
+            <th>Hora</th>
+            <th>Estado</th>
+            <th>Detalles</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Madrid</td>
+            <td>08:30</td>
+            <td class="ok"><i class="fas fa-check-circle"></i> A Tiempo</td>
+            <td><button onclick="alert('Puerta 5, Terminal A')">Ver</button></td>
+          </tr>
+          <tr>
+            <td>Miami</td>
+            <td>09:15</td>
+            <td class="delay"><i class="fas fa-exclamation-circle"></i> Retrasado</td>
+            <td><button onclick="alert('Puerta 2, Terminal B')">Ver</button></td>
+          </tr>
+          <tr>
+            <td>Buenos Aires</td>
+            <td>10:45</td>
+            <td class="ok"><i class="fas fa-check-circle"></i> A Tiempo</td>
+            <td><button onclick="alert('Puerta 8, Terminal C')">Ver</button></td>
+          </tr>
+          <tr>
+            <td>Tokio</td>
+            <td>12:30</td>
+            <td class="boarding"><i class="fas fa-door-open"></i> Embarcando</td>
+            <td><button onclick="alert('Puerta 1, Terminal D')">Ver</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="servicios" class="seccion">
+        <h2><i class="fas fa-concierge-bell"></i> Nuestros Servicios</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="img/restaurante.jpg" alt="Restaurantes" style="width:100px; border-radius:10px; margin-bottom:15px;">
+                <i class="fas fa-utensils"></i>
+                <h3>Restaurantes</h3>
+                <p>Comida internacional y gourmet.</p>
+            </div>
+            <div class="card">
+                <img src="img/autos.jpg" alt="Alquiler de Autos" style="width:100px; border-radius:10px; margin-bottom:15px;">
+                <i class="fas fa-car"></i>
+                <h3>Alquiler de Autos</h3>
+                <p>Vehículos disponibles 24/7.</p>
+            </div>
+            <div class="card">
+                <img src="img/wifi.jpg" alt="WiFi Gratis" style="width:100px; border-radius:10px; margin-bottom:15px;">
+                <i class="fas fa-wifi"></i>
+                <h3>WiFi Gratis</h3>
+                <p>Conéctate en todas las áreas.</p>
+            </div>
+            <div class="card">
+                <img src="img/equipaje.jpg" alt="Equipaje" style="width:100px; border-radius:10px; margin-bottom:15px;">
+                <i class="fas fa-suitcase-rolling"></i>
+                <h3>Equipaje</h3>
+                <p>Depósito y rastreo de maletas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="seccion">
+        <h2><i class="fas fa-images"></i> Galería</h2>
+        <div class="carousel-container">
+            <button class="carousel-btn prev-btn">&#10094;</button>
+            <div class="carousel-track">
+                <img src="img/aeropuerto1.jpg" alt="Galería 1" class="carousel-image">
+                <img src="img/aeropuerto2.jpg" alt="Galería 2" class="carousel-image">
+                <img src="img/aeropuerto3.jpg" alt="Galería 3" class="carousel-image">
+                <img src="img/aeropuerto4.jpg" alt="Galería 4" class="carousel-image">
+            </div>
+            <button class="carousel-btn next-btn">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="noticias" class="seccion">
+        <h2><i class="fas fa-newspaper"></i> Noticias</h2>
+        <div class="noticias-grid">
+            <div class="noticia-card">
+                <img src="img/NOTICIA1.jpg" alt="Noticia 1" class="noticia-img">
+                <div class="noticia-content">
+                    <span class="noticia-fecha">21 de agosto 2025</span>
+                    <span class="noticia-autor">Por Admin</span>
+                    <div class="noticia-divider"></div>
+                    <h3 class="noticia-titulo">Nuevo vuelo directo a París</h3>
+                    <p>Desde septiembre, el aeropuerto contará con vuelos directos a París todos los días.</p>
+                    <a href="#" class="noticia-btn">Leer más</a>
+                </div>
+            </div>
+            <div class="noticia-card">
+              <img src="img/noticias2.jpg" alt="Noticia 2" class="noticia-img">
+              <div class="noticia-content">
+                  <span class="noticia-fecha">18 de agosto 2025</span>
+                  <span class="noticia-autor">Por Prensa</span>
+                  <div class="noticia-divider"></div>
+                  <h3 class="noticia-titulo">Renovación de salas VIP</h3>
+                  <p>Las salas VIP han sido renovadas con nuevos servicios y mayor comodidad para los pasajeros.</p>
+                  <a href="#" class="noticia-btn">Leer más</a>
+              </div>
+              </div>
+              <div class="noticia-card">
+                  <img src="img/noticia3.jpg" alt="Noticia 3" class="noticia-img">
+                  <div class="noticia-content">
+                      <span class="noticia-fecha">15 de agosto 2025</span>
+                      <span class="noticia-autor">Por Equipo</span>
+                      <div class="noticia-divider"></div>
+                      <h3 class="noticia-titulo">Nuevo sistema de equipaje inteligente</h3>
+                      <p>Ahora puedes rastrear tu equipaje en tiempo real desde tu móvil gracias a nuestro nuevo sistema.</p>
+                      <a href="#" class="noticia-btn">Leer más</a>
+                  </div>
+              </div>
+              <div class="noticia-card">
+                  <img src="img/noticia4.jpg" alt="Noticia 4" class="noticia-img">
+                  <div class="noticia-content">
+                      <span class="noticia-fecha">10 de agosto 2025</span>
+                      <span class="noticia-autor">Por Admin</span>
+                      <div class="noticia-divider"></div>
+                      <h3 class="noticia-titulo">Ampliación de estacionamiento</h3>
+                      <p>El aeropuerto ha ampliado su estacionamiento para mayor comodidad y seguridad de los usuarios.</p>
+                      <a href="#" class="noticia-btn">Leer más</a>
+              </div>
+            </div>
+              <div class="noticia-card">
+                  <img src="img/noticia5.jpg" alt="Noticia 3" class="noticia-img">
+                  <div class="noticia-content">
+                      <span class="noticia-fecha">15 de agosto 2025</span>
+                      <span class="noticia-autor">Por Equipo</span>
+                      <div class="noticia-divider"></div>
+                      <h3 class="noticia-titulo">Nuevo sistema de equipaje inteligente</h3>
+                      <p>Ahora puedes rastrear tu equipaje en tiempo real desde tu móvil gracias a nuestro nuevo sistema.</p>
+                      <a href="#" class="noticia-btn">Leer más</a>
+                  </div>
+              </div>
+              <div class="noticia-card">
+                  <img src="img/noticia6.jpg" alt="Noticia 4" class="noticia-img">
+                  <div class="noticia-content">
+                      <span class="noticia-fecha">10 de agosto 2025</span>
+                      <span class="noticia-autor">Por Admin</span>
+                      <div class="noticia-divider"></div>
+                      <h3 class="noticia-titulo">Ampliación de estacionamiento</h3>
+                      <p>El aeropuerto ha ampliado su estacionamiento para mayor comodidad y seguridad de los usuarios.</p>
+                      <a href="#" class="noticia-btn">Leer más</a>
+              </div>
+            </div>
+    </section>
+
+    <section id="contacto" class="seccion contacto">
+        <h2><i class="fas fa-envelope"></i> Contáctanos</h2>
+        <p class="subtitulo">Estamos listos para ayudarte. Envíanos un mensaje y te responderemos lo antes posible.</p>
+        <div class="contacto-wrapper">
+            <form>
+                <div class="input-group">
+                    <input type="text" placeholder="Nombre completo" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="Correo electrónico" required>
+                </div>
+                <div class="input-group">
+                    <textarea placeholder="Tu mensaje"></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+            <div class="contacto-info">
+                <h3>Información de Contacto</h3>
+                <p><i class="fas fa-phone"></i> +51 999 999 999</p>
+                <p><i class="fas fa-map-marker-alt"></i> Av. Principal 123, Lima, Perú</p>
+                <p><i class="fas fa-clock"></i> Lunes a Viernes: 9am - 5pm</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-col">
+                <h3>Aeropuerto Internacional</h3>
+                <p>&copy; 2025 | Todos los derechos reservados</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Enlaces útiles</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Vuelos</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+            <h3>Contáctanos</h3>
+                <p>Tel: +51 987 654 321</p>
+                <p>Email: info@aeropuerto.com</p>
+                <div class="footer-redes">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <a href="https://wa.me/51999999999" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const track = document.querySelector('.carousel-track');
+    const images = document.querySelectorAll('.carousel-image');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    let currentIndex = 0;
+
+    function updateCarousel() {
+        const width = images[0].clientWidth;
+        track.style.transform = `translateX(-${currentIndex * width}px)`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateCarousel();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateCarousel();
+    });
+
+    window.addEventListener('resize', updateCarousel);
+    updateCarousel();
+    });
+    </script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const typingElement = document.getElementById("titulo-dinamico");
+        if (typingElement) {
+            const texto = typingElement.getAttribute("data-texto");
+            let i = 0;
+            function escribir() {
+                if (i < texto.length) {
+                    typingElement.innerHTML += texto.charAt(i);
+                    i++;
+                    setTimeout(escribir, 80);
+                }
+            }
+            escribir();
+        }
+
+        const contadores = document.querySelectorAll('.contador');
+        const observerContadores = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    const final = +el.getAttribute('data-num');
+                    let actual = 0;
+                    const incremento = Math.ceil(final / 200);
+
+                    const animar = () => {
+                        actual += incremento;
+                        if (actual < final) {
+                            el.innerText = actual.toLocaleString();
+                            requestAnimationFrame(animar);
+                        } else {
+                            el.innerText = final.toLocaleString();
+                        }
+                    };
+                    animar();
+                    observerContadores.unobserve(el);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        contadores.forEach(c => observerContadores.observe(c));
+
+        const sections = document.querySelectorAll('.seccion');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        sections.forEach(sec => {
+            sec.classList.add('hidden');
+            observer.observe(sec);
+        });
+    });
+    </script>
+
+</body>
+</html>
